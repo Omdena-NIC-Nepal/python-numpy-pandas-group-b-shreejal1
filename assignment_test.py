@@ -9,7 +9,7 @@ class TestAssignmentNotebook(unittest.TestCase):
     def setUpClass(cls):
         """Load and execute the notebook before running tests"""
         notebook_path = "assignment.ipynb"
-        assert os.path.exists(notebook_path), f"Notebook {notebook_path} not found"
+        assert os.path.exists(notebook_path), f"Notebook {notebook_path} not found" 
         
         with open(notebook_path, "r", encoding="utf-8") as f:
             nb = nbformat.read(f, as_version=4)
